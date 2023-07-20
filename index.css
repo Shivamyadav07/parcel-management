@@ -1,0 +1,30 @@
+body{
+    background-color: rgb(42,40,40);
+    padding: 30px;
+    color: white;
+}
+.display_parcel{
+    overflow: auto;
+    white-space: nowrap;
+    text-align: center;
+    font-size: large;
+    font-weight: bolder;
+}
+.parcelDiv{
+    display: inline-block;
+    height: 40px;
+    width: 140px;
+    border: 1px solid;
+}
+.parcel{
+    display: inline-block;
+    margin-left: 20px;
+}
+.input_div{
+    height: 200px;
+    width: 300px;
+    border: 1px solid ;
+}
+/* .parcel_group{
+
+} */
