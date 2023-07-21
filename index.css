@@ -1,30 +1,148 @@
-body{
-    background-color: rgb(42,40,40);
+body {
+    background-color: rgb(42, 40, 40);
     padding: 30px;
     color: white;
 }
-.display_parcel{
+
+.parcel_group_container {
     overflow: auto;
     white-space: nowrap;
+}
+
+.parcel_group {
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.group {
+    display: inline-block;
+    text-align: center;
+    height: 20px;
+}
+
+.Kolkata {
+    background-color: #007bff;
+}
+
+.Mumbai {
+    background-color: rgb(240, 21, 94);
+}
+
+.Delhi {
+    background-color: rgb(241, 194, 50);
+}
+
+.display_parcel {
     text-align: center;
     font-size: large;
     font-weight: bolder;
 }
-.parcelDiv{
+
+.parcelDiv {
     display: inline-block;
-    height: 40px;
+    height: 70px;
     width: 140px;
-    border: 1px solid;
 }
-.parcel{
+
+.sequence_div {
+    border: 1px solid;
+    padding: 10px;
+}
+
+.selected_parcel {
     display: inline-block;
     margin-left: 20px;
+    color: rgb(19, 193, 194);
 }
-.input_div{
-    height: 200px;
-    width: 300px;
-    border: 1px solid ;
-}
-/* .parcel_group{
 
-} */
+.input_container {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.input_div {
+    height: 200px;
+    width: 500px;
+    padding: 10px;
+    border: 1px solid;
+    display: inline-block;
+}
+
+input {
+    width: 80%;
+    height: 50px;
+    outline: 0px;
+    background-color: rgb(42, 40, 40);
+    color: white;
+    border: 0px;
+    margin-left: 10px;
+    font-size: medium;
+}
+
+select {
+    margin-top: 20px;
+    width: 60%;
+    height: 50px;
+    outline: 0px;
+    background-color: rgb(42, 40, 40);
+    color: white;
+    border: 0px;
+    margin-left: 10px;
+    font-size: medium;
+}
+
+.define_color_div {
+    width: 100px;
+    height: 70px;
+    padding: 10px;
+    margin-top: 50px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.color_container {
+    display: flex;
+    position: relative;
+    margin-top: 5px;
+    width: 110px;
+    gap: 20px;
+}
+
+.color_div {
+    height: 20px;
+    width: 20px;
+    display: inline-block;
+    position: absolute;
+    align-items: right;
+    right: 0;
+}
+
+#Mumbai {
+    background-color: rgb(240, 21, 94);
+}
+
+#Delhi {
+    background-color: rgb(241, 194, 50);
+}
+
+#Kolkata {
+    background-color: rgb(60, 121, 216);
+}
+
+.button_div {
+    margin-top: 50px;
+    display: flex;
+    gap: 78px;
+}
+
+button {
+    height: 50px;
+    width: 150px;
+    background-color: rgb(182, 215, 168);
+    font-size: medium;
+    font-weight: bold;
+    border: 0px;
+}

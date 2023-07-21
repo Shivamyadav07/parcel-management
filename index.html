@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <div>
+    <div class="parcel_group_container">
         <div class="parcel_group">
         </div>
         <div class="display_parcel">
@@ -17,16 +17,47 @@
     </div>
     <div>
         <h1 style="display: inline-block;">Selected parcel :</h1>
-        <h2 class="parcel"></h2>
+        <h2 class="selected_parcel"></h2>
     </div>
-    <div class="input_div">
-        <input placeholder="Enter parcel name..." />
-        <select>
-            <option value="Mumbai">Mumbai</option>
-            <option value="Delhi">Delhi</option>
-            <option value="Kolkata">Kolkata</option>
-        </select>
+    <div class="input_container">
+        <div class="input_div">
+            <span>Enter Name :<input required placeholder="Enter parcel name..." /></span>
+            <span>
+                Select Location Group :
+                <select required>
+                    <option value="">Select Location Group</option>
+                    <option value="Mumbai">Mumbai</option>
+                    <option value="Delhi">Delhi</option>
+                    <option value="Kolkata">Kolkata</option>
+                </select>
+            </span>
+        </div>
+        <div class="define_color_div">
+            <div class="color_container">
+                Mumbai :
+                <div class="color_div" id="Mumbai"></div>
+            </div>
+            <div class="color_container">
+                Delhi :
+                <div class="color_div" id="Delhi"></div>
+            </div>
+            <div class="color_container">
+                Kolkata :
+                <div class="color_div" id="Kolkata"></div>
+            </div>
+        </div>
     </div>
+
+    <div class="button_div">
+        <button onclick="handleAddAfter()">Add After</button>
+        <button onclick="handleAddBefore()">Add Before</button>
+        <button onclick="handleReplace()">Replace</button>
+        <button onclick="handleDelete()">Delete</button>
+        <button onclick="handleRefresh()">Refresh</button>
+        <button onclick="handleShowFinal()">Show Final</button>
+    </div>
+
 </body>
 <script src="index.js"></script>
+
 </html>
